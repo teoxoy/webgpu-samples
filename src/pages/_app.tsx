@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import { AppProps } from 'next/app';
 import Link from 'next/link';
 import { useRouter } from 'next/router';

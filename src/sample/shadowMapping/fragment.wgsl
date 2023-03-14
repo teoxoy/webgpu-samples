@@ -1,4 +1,4 @@
-override shadowDepthTextureSize: f32 = 1024.0;
+const shadowDepthTextureSize: f32 = 1024.0;
 
 struct Scene {
   lightViewProjMatrix : mat4x4<f32>,
@@ -16,7 +16,7 @@ struct FragmentInput {
   @location(2) fragNorm : vec3<f32>,
 }
 
-const albedo = vec3<f32>(0.9);
+const albedo = vec3<f32>(0.9, 0.9, 0.9);
 const ambientFactor = 0.2;
 
 @fragment

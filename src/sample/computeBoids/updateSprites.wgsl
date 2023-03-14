@@ -52,10 +52,10 @@ fn main(@builtin(global_invocation_id) GlobalInvocationID : vec3<u32>) {
       cVelCount++;
     }
   }
-  if (cMassCount > 0) {
+  if (cMassCount > 0u) {
     cMass = (cMass / vec2(f32(cMassCount))) - vPos;
   }
-  if (cVelCount > 0) {
+  if (cVelCount > 0u) {
     cVel /= f32(cVelCount);
   }
   vVel += (cMass * params.rule1Scale) + (colVel * params.rule2Scale) + (cVel * params.rule3Scale);

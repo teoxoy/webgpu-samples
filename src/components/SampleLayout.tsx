@@ -23,6 +23,10 @@ export type SampleInit = (params: {
 }) => void | Promise<void>;
 
 if (process.browser) {
+  require('./moz-shim.js');
+}
+
+if (process.browser) {
   require('codemirror/mode/javascript/javascript');
 }
 
