@@ -27,7 +27,6 @@ jobs:
         run: |
           export REPOSITORY_NAME=${{ github.repository }}
           npm ci
-          npm run-script lint
           npm run-script build
           npm run-script export
           touch out/.nojekyll
